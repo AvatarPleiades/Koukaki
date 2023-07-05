@@ -33,9 +33,11 @@ transform: rotate(360deg);
   @keyframes slidein {
     0% {
       transform: translateY(30%);
+      opacity: 0;
     }
     100% {
       transform: translateY(0%);
+      opacity: 1;
     }
   }
 
@@ -230,14 +232,14 @@ h3 {
         margin: 0;
         text-align: center;
         padding-left: 0px;
-        margin-top: 200px;
+        padding-top: 130px;
+        background-color: white;
     }
 
     .main-navigation ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        font-size: 32px;
+        margin-bottom: 57px;
 
     }
 }
+

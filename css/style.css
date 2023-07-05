@@ -45,10 +45,12 @@
   0% {
     -webkit-transform: translateY(30%);
             transform: translateY(30%);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -56,10 +58,12 @@
   0% {
     -webkit-transform: translateY(30%);
             transform: translateY(30%);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 .titleAnimation {
@@ -259,21 +263,11 @@ h3 {
     margin: 0;
     text-align: center;
     padding-left: 0px;
-    margin-top: 200px;
+    padding-top: 130px;
+    background-color: white;
   }
   .main-navigation ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 32px;
+    margin-bottom: 57px;
   }
 }
