@@ -55,16 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('.video-koukaki');
   
     new simpleParallax(video, {
-        orientation: 'right',
-        scale: 1.15,
+        orientation: 'left',
+        scale: 1.2,
         delay: 0.5,
-        transition: 'cubic-bezier(0,0,0,1)'
+        transition: 'ease-in-out'
     });
   });
   
-  //SwiperJS Coverflow
-  
-  const swiper = new Swiper(".swiper", {
+//SwiperJS Coverflow
+
+const swiper = new Swiper(".swiper", {
     direction: 'horizontal',
     centeredSlides: true,
     slidesPerView: "auto",
@@ -84,6 +84,38 @@ document.addEventListener('DOMContentLoaded', function () {
         depth: 50,
         modifier: 1, 
     },
-  });
-  
-  swiper.slideNext();
+});
+
+swiper.slideNext();
+
+//Translation du nuage
+
+// Ajoute un écouteur d'événement qui détecte le défilement de la fenêtre.
+
+window.addEventListener('scroll', function () {
+
+    // Selection des éléments
+    const bigCloud = document.querySelector('.nuages');
+    const littleCloud = document.querySelector('.petits-nuages');
+    const placeSection = document.querySelector('#place');
+
+    // Récuperation de la position verticale (offsetTop) de la section "place" par rapport au haut de la page
+    // ainsi que la position de défilement verticale actuelle de la fenêtre.
+    const sectionOffsetTop = placeSection.offsetTop;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Verification si la position de défilement actuelle est supérieure ou égale à la position verticale
+    if (scrollPosition >= sectionOffsetTop) {
+
+        // calcule la valeur de défilement, détermine l'intensité du déplacement des nuages
+        const parallaxValue = (scrollPosition - sectionOffsetTop) / 4;
+
+        // Math.min() limite la valeur de déplacement à 300px
+        const translationX = Math.min(parallaxValue, 300);
+
+        // Utilisation de la propriété CSS transform pour modifier la position des nuages avec translateX
+        // Le -translationX (distance de déplacement vers la gauche), 'px' pour utiliser le pixel.
+        bigCloud.style.transform = 'translateX(' + (-translationX) + 'px)';
+        littleCloud.style.transform = 'translateX(' + (-translationX) + 'px)';
+    }
+});

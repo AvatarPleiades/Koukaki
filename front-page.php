@@ -40,8 +40,8 @@ get_header();
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
-                    <img src="<?php echo get_theme_file_uri('/assets/images/nuage.png'); ?>" id="nuages">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/nuage.png'); ?>" id="petits-nuages">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/nuage.png'); ?>" class="nuages">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/nuage.png'); ?>" class="petits-nuages">
                 </div>
 
             </article>
