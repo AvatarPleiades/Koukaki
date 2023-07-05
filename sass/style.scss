@@ -24,6 +24,37 @@ transform: rotate(360deg);
 }
 }
 
+//Apparition des sections et des titres
+
+.fadeIn {
+    animation: slidein 1s ease-in;
+  }
+  
+  @keyframes slidein {
+    0% {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+.titleAnimation {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0;
+    transform: translateY(100%);
+  
+    transition: opacity 0.2s ease-in, transform 0.5s ease-in;
+  
+    &.visibility {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 //Section des oscars
 
 .oscars {
@@ -191,4 +222,24 @@ h3 {
     left: 740px;
     position: relative;
     filter: blur(15px);
+}
+
+//Menu de navigation Mobile
+
+@media screen and (max-width: 699px) {
+    .main-navigation ul {
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 200px;
+    }
+
+    .main-navigation ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
