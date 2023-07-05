@@ -1,0 +1,25 @@
+//Rotation des fleurs
+
+.site-footer::after,
+.site-footer ul::after,
+.site-footer::before,
+.story__article::after,
+#studio h2::before,
+#studio h2::after {
+animation: rotate 5s infinite linear;
+}
+
+.story h2::after {
+animation: rotate 5s infinite linear;
+width: 155px;
+height: 155px;
+}
+
+@keyframes rotate {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
