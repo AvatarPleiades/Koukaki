@@ -36,3 +36,37 @@
             transform: rotate(360deg);
   }
 }
+.oscars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 965px;
+  margin-left: 200px;
+  margin-bottom: 160px;
+}
+.oscars img {
+  margin-top: 50px;
+  width: 278px;
+  height: 129px;
+}
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4em;
+}
+.site-footer h2.titre_oscars {
+  background-color: transparent;
+}
+
+.titre_oscars {
+  font-size: 2.2rem;
+  padding: 1.8em 2em;
+  background-image: url(../assets/images/background-title-oscars.png);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
