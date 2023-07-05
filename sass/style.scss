@@ -155,3 +155,40 @@ h3 {
     background-position: left;
     text-align: left;
 }
+
+//Positionnement Nuages
+
+.story #place {
+    background-image: url("../assets/images/lieu_bg.png");
+    position: relative;
+  
+    h3 {
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+}
+
+.story #place > div p {
+    padding-left: 5em;
+    margin-left: 50px;
+  }
+  
+#nuages {
+    width: 316px;
+    height: 122px;
+    position: relative;
+    top: -400px;
+    left: 930px;
+    transform: scaleX(-1) scaleY(-1);
+    filter: blur(15px);
+    z-index: 1;
+}
+
+#petits-nuages {
+    width: 142px;
+    height: 55px;
+    top: -330px;
+    left: 740px;
+    position: relative;
+    filter: blur(15px);
+}
