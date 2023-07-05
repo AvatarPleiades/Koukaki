@@ -33,6 +33,7 @@
                 <span class="line"></span>
             </button>
             <ul>
+                <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" class="logo-burger">
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>

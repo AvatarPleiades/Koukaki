@@ -118,6 +118,23 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width: 699px) {
+  .oscars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 630px;
+    margin-left: 0px;
+    margin-bottom: 220px;
+  }
+  .oscars img {
+    margin-left: 150px;
+  }
+}
 .container {
   height: 806px;
   overflow: hidden;
@@ -171,7 +188,7 @@
   display: none;
 }
 
-@media (max-width: 821px) {
+@media (max-width: 699px) {
   .video-koukaki {
     display: none;
   }
@@ -185,7 +202,7 @@
     display: none;
   }
 }
-@media (min-width: 822px) {
+@media (min-width: 699px) {
   .banner {
     background-image: none;
   }
@@ -220,6 +237,13 @@ h3 {
   text-align: left;
 }
 
+@media screen and (max-width: 699px) {
+  .swiper {
+    width: auto;
+    margin-left: -59.5em !important;
+    margin-right: -55em !important;
+  }
+}
 .story #place {
   background-image: url("../assets/images/lieu_bg.png");
   position: relative;
@@ -263,11 +287,33 @@ h3 {
     margin: 0;
     text-align: center;
     padding-left: 0px;
-    padding-top: 130px;
+    padding-top: 43px;
     background-color: white;
+  }
+  .main-navigation button {
+    margin-left: 520px;
+  }
+  .main-navigation img {
+    margin-bottom: 68px;
   }
   .main-navigation ul li {
     font-size: 32px;
     margin-bottom: 57px;
+  }
+  .main-navigation ul li a:hover {
+    color: black;
+    text-shadow: -1px -1px 3px rgba(255, 92, 0, 0.5019607843), 3px -1px 3px rgba(255, 92, 0, 0.3), -1px 3px 3px rgba(255, 92, 0, 0.3), 3px 3px 3px rgba(255, 92, 0, 0.3);
+  }
+  .logo-burger {
+    width: 154px;
+    height: 95px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .logo-burger {
+    display: none;
+  }
+  .menu-toggle, .main-navigation.toggled ul {
+    display: none;
   }
 }
