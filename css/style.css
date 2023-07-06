@@ -334,9 +334,6 @@ h3 {
     -webkit-transform: background-color 0.5s ease-in-out;
             transform: background-color 0.5s ease-in-out;
   }
-  .main-navigation img {
-    margin-bottom: 68px;
-  }
   .main-navigation ul li {
     font-size: 32px;
     margin-bottom: 57px;
@@ -348,6 +345,16 @@ h3 {
   .logo-burger {
     width: 154px;
     height: 95px;
+    margin-bottom: 68px;
+  }
+  .cat-blue {
+    position: relative;
+    width: 109px;
+    height: 98px;
+    top: -470px;
+    left: -180px;
+    -webkit-transform: float 1s infinite linear;
+            transform: float 1s infinite linear;
   }
 }
 @media screen and (min-width: 700px) {
