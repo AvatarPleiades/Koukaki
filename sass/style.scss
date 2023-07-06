@@ -262,6 +262,48 @@ h3 {
         margin-left: 520px;
     }
 
+    .main-navigation .line {
+        height: 3px;
+        background-color: #000;
+        display: block;
+        margin: auto;
+        margin-block: 2px;
+        width: 20px;
+        transform: background-color 0.5s ease-in-out;
+    }
+
+    .main-navigation.toggled .line {
+        transform: translateY(3px) rotateZ(45deg);
+    }
+
+    .main-navigation.toggled .line2 {
+        background-color: transparent;
+    }
+
+    .main-navigation.toggled .line3 {
+        transform: translateY(-7px) rotateZ(-45deg);
+    }
+
+    .main-navigation .line2 {
+        height: 3px;
+        background-color: #000;
+        display: block;
+        margin: auto;
+        margin-block: 2px;
+        width: 20px;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .main-navigation .line3 {
+        height: 3px;
+        background-color: #000;
+        display: block;
+        margin: auto;
+        margin-block: 2px;
+        width: 20px;
+        transform: background-color 0.5s ease-in-out;
+    }
+
     .main-navigation img {
         margin-bottom: 68px;
     }

@@ -29,8 +29,8 @@
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                 <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
             </button>
             <ul>
                 <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" class="logo-burger">
