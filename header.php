@@ -39,7 +39,6 @@
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
-                <img src="<?php echo get_theme_file_uri('/assets/images/mobile/cat-blue.png'); ?>" class="cat-blue">
             </ul>
 
 		</nav><!-- #site-navigation -->

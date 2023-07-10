@@ -353,15 +353,10 @@ h3 {
     height: 98px;
     top: -470px;
     left: -180px;
-    -webkit-transform: float 1s infinite linear;
-            transform: float 1s infinite linear;
   }
 }
 @media screen and (min-width: 700px) {
   .logo-burger {
-    display: none;
-  }
-  .menu-toggle, .main-navigation.toggled ul {
     display: none;
   }
 }

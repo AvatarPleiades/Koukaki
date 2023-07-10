@@ -326,7 +326,6 @@ h3 {
       height: 98px;
       top: -470px;
       left: -180px;
-      transform: float 1s infinite linear;
     }
 }
 
@@ -334,8 +333,4 @@ h3 {
     .logo-burger {
         display: none;
     }
-    .menu-toggle, .main-navigation.toggled ul {
-        display: none;
-    }
 }
-
