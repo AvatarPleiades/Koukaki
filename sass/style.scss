@@ -246,91 +246,219 @@ h3 {
     filter: blur(15px);
 }
 
-//Menu de navigation Mobile
+//Navbar 
 
-@media screen and (max-width: 699px) {
-    .main-navigation ul {
-        height: 100vh;
-        margin: 0;
-        text-align: center;
-        padding-left: 0px;
-        padding-top: 43px;
-        background-color: white;
+.main-navigation {
+  display: flex;
+  position: fixed;
+  width: 1440px;
+}
+
+.main-navigation ul {
+  display: flex;
+  font-weight: bold;
+  margin-left: 570px;
+}
+
+//Toggle
+
+.navbar-toggle {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 400px;
+}
+
+.navbar-toggle span {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-toggle span::before, .navbar-toggle span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-toggle span::before {
+  transform: translateY(-10px);
+}
+
+.navbar-toggle span::after {
+  transform: translateY(10px);
+}
+
+//Translation en croix
+
+.navbar-toggle.active span {
+  background-color: transparent !important;
+}
+
+.navbar-toggle.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+.navbar-toggle.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+// Menu Ouvert
+
+.site-navigation .site-title {
+  position: fixed;
+}
+
+.toggle-open {
+  position: fixed;
+  width: 1440px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in;
+}
+
+.toggle-open.open {
+    opacity: 1;
+    visibility: visible;
+    animation: toggle-open 1s ease-in-out;
+}
+
+@keyframes toggle-open {
+    0% {
+        opacity: 0;
     }
 
-    .main-navigation button {
-        margin-left: 520px;
-    }
-
-    .main-navigation .line {
-        height: 3px;
-        background-color: #000;
-        display: block;
-        margin: auto;
-        margin-block: 2px;
-        width: 20px;
-        transform: background-color 0.5s ease-in-out;
-    }
-
-    .main-navigation.toggled .line {
-        transform: translateY(3px) rotateZ(45deg);
-    }
-
-    .main-navigation.toggled .line2 {
-        background-color: transparent;
-    }
-
-    .main-navigation.toggled .line3 {
-        transform: translateY(-7px) rotateZ(-45deg);
-    }
-
-    .main-navigation .line2 {
-        height: 3px;
-        background-color: #000;
-        display: block;
-        margin: auto;
-        margin-block: 2px;
-        width: 20px;
-        transition: background-color 0.5s ease-in-out;
-    }
-
-    .main-navigation .line3 {
-        height: 3px;
-        background-color: #000;
-        display: block;
-        margin: auto;
-        margin-block: 2px;
-        width: 20px;
-        transform: background-color 0.5s ease-in-out;
-    }
-
-    .main-navigation ul li {
-        font-size: 32px;
-        margin-bottom: 57px;
-    }
-
-    .main-navigation ul li a:hover {
-        color: black;
-        text-shadow: -1px -1px 3px #ff5c0080, 3px -1px 3px rgba(255, 92, 0, 0.3), -1px 3px 3px rgba(255, 92, 0, 0.3), 3px 3px 3px rgba(255, 92, 0, 0.3);
-    }
-
-    .logo-burger {
-        width: 154px;
-        height: 95px;
-        margin-bottom: 68px;
-    }
-
-    .cat-blue {
-      position: relative;
-      width: 109px;
-      height: 98px;
-      top: -470px;
-      left: -180px;
+    100% {
+        opacity: 1;
     }
 }
 
-@media screen and (min-width: 700px){
-    .logo-burger {
-        display: none;
-    }
+.toggle-open ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.toggle-open li {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 80px;
+  list-style: none;
+  margin: 0;
+}
+
+.toggle-open img {
+      margin: auto;
+      display: flex;
+  }
+
+.toggle-open a:hover {
+      color: black;
+      text-shadow: -1px -1px 4px rgba(255, 92, 0, 0.3), 4px -1px 4px rgba(255, 92, 0, 0.3), -1px 4px 4px rgba(255, 92, 0, 0.3), 4px 4px 4px rgba(255, 92, 0, 0.3);
+  }
+
+.toggle-open p {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 70px;
+  }
+
+a {
+  text-decoration: none;
+}
+
+//Positionnement des images du menu toggle
+
+.logotoggle {
+  position: absolute;
+  left: 640px;
+  top: 100px;
+  width: 154px;
+  height: 95px;
+}
+
+.orchidtoggle {
+  position: absolute;
+  top: 140px;
+  left: -50px;
+  width: 150px;
+  height: 148px;
+  animation: rotate 5s infinite linear;
+}
+
+.flowertoggle {
+  position: absolute;
+  top: 360px;
+  left: 250px;
+  width: 70px;
+  height: 70px;
+  animation: rotate 5s infinite linear;
+}
+
+.sunflowertoggle {
+  position: absolute;
+  top: 90px;
+  left: 950px;
+  width: 216px;
+  height: 216px;
+  animation: rotate 5s infinite linear;
+}
+
+.randomflowertoggle {
+  position: absolute;
+  top: 285px;
+  left: 1330px;
+  width: 75px;
+  height: 75px;
+  animation: rotate 5s infinite linear;
+}
+
+.hibiscustoggle {
+  position: absolute;
+  top: 380px;
+  left: 1080px;
+  width: 626px;
+  height: 626px;
+  animation: rotate 5s infinite linear;
+}
+
+.bluecattoggle {
+  position: absolute;
+  top: 200px;
+  left: 310px;
+  width: 109px;
+  height: 98px;
+  animation: TranslateLogo 6s infinite linear;
+}
+
+.orangecattoggle {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  width: 105px;
+  height: 95px;
+  animation: TranslateLogo 6s infinite linear;
+}
+
+.blackcattoggle {
+  position: absolute;
+  top: 350px;
+  left: 950px;
+  width: 135px;
+  height: 128px;
+  animation: TranslateLogo 6s infinite linear;
 }

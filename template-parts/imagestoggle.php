@@ -1,0 +1,9 @@
+<img class ="logotoggle" src="<?php echo get_theme_file_uri() . '/assets/images/menu/logo.png'; ?>" alt="Logo Toggle Open">
+<img class ="orchidtoggle" src="<?php echo get_theme_file_uri() . '/assets/images/orchid.png'; ?>" alt="Orchid Toggle Open">
+<img class ="flowertoggle" src="<?php echo get_theme_file_uri() . '/assets/images/flower.png'; ?>" alt="Flower Toggle Open">
+<img class ="sunflowertoggle" src="<?php echo get_theme_file_uri() . '/assets/images/Sunflower.png'; ?>" alt="SunFlower  Toggle Open">
+<img class ="randomflowertoggle" src="<?php echo get_theme_file_uri() . '/assets/images/random_flower.png'; ?>" alt="RandomFlower Toggle Open">
+<img class ="hibiscustoggle" src="<?php echo get_theme_file_uri() . '/assets/images/hibiscus_footer.png'; ?>" alt="Hibiscus Toggle Open">
+<img class ="bluecattoggle" src="<?php echo get_theme_file_uri() . '/assets/images/menu/cat-blue.png'; ?>" alt="BlueCat Toggle Open">
+<img class ="orangecattoggle" src="<?php echo get_theme_file_uri() . '/assets/images/menu/cat-orange.png'; ?>" alt="OrangeCat Toggle Open">
+<img class ="blackcattoggle" src="<?php echo get_theme_file_uri() . '/assets/images/menu/cat-grey.png'; ?>" alt="GreyCat Toggle Open">

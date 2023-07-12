@@ -27,19 +27,21 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="line"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </button>
-            <ul>
-                <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" class="logo-burger">
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+            <ul class="navbar">
+            <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
             </ul>
-
-		</nav><!-- #site-navigation -->
+            <div class="navbar-toggle">
+            <span></span>
+            </div>
+        </nav><!-- #site-navigation -->
+            <div class="toggle-open">
+                <?php get_template_part( '/template-parts/imagestoggle' ); ?>
+                <ul>
+                    <li><a href="#story">Histoire</a></li>
+                    <li><a href="#characters">Personnages</a></li>
+                    <li><a href="#place">Lieu</a></li>
+                    <li><a href="#studio">Studio Koukaki</a></li>
+                </ul>
+            <p>STUDIO KOUKAKI</p>
+            </div>
 	</header><!-- #masthead -->
