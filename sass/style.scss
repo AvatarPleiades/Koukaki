@@ -465,3 +465,81 @@ a {
   height: 128px;
   animation: TranslateLogo 6s infinite linear;
 }
+
+//Responsive Mobile 
+
+@media screen and (max-width: 376px) {
+
+  .main-navigation {
+    width: 375px;
+  }
+
+  .main-navigation ul {
+    height: 50px;
+    margin-left: 80px;
+  }
+
+  .main-navigation ul .site-title {
+    display: block;
+  }
+
+  .main-navigation .site-title {
+  font-size: 12.5px;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    top: -20px;
+    left: -80px;
+    width: 40px;
+    height: 35px;
+    margin-top: 30px;
+  }
+
+  .toggle-open {
+    width: 375px;
+  }
+
+  .logotoggle {
+    left: 105px;
+    top: 100px;
+  }
+
+  .orchidtoggle {
+    top: 140px;
+    left: -80px;
+  }
+
+  .flowertoggle {
+    top: 360px;
+    left: 286px;
+  }
+
+  .bluecattoggle {
+    top: 185px;
+    left: 285px;
+  }
+
+  .orangecattoggle {
+    top: 515px;
+    left: 25px;
+  }
+
+  h3 {
+    font-size: 29px;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  .titre_oscars {
+    width: 63%;
+    font-size: 20px !important;
+    padding: 0.8em 2em;
+  }
+
+  .oscars img {
+    margin-left: 50px;
+  }
+}
